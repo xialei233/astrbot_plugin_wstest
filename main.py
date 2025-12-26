@@ -14,7 +14,7 @@ class MyHelloPlugin(Star):
         logger.info("中文问候插件已初始化")
 
     # 注册指令：指令名为“你好”，对应触发消息为 /你好
-    @filter.command("你好")
+    @filter.command("hello")
     async def hello_handler(self, event: AstrMessageEvent):
         """回复中文问候的指令，触发词：/你好"""
         # 获取发送者的用户名
